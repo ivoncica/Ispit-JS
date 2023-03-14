@@ -4,7 +4,7 @@ $(document).ready(function(){
         if(searchSong != "") {
             $.ajax(
                 {
-                    url: "https://itunes.apple.com/search?term="+searchSong,
+                    url: "https://itunes.apple.com/search?term="+searchSong+"&entity=song",
                     type: "GET",
                     dataType:"json",
                     success: function(data) {
@@ -27,10 +27,3 @@ $(document).ready(function(){
         }
     }) 
 }) 
-
-
-
-
-
-
-   
